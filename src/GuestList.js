@@ -1,7 +1,8 @@
 
 const GuestList =  ({list}) => {
 return (
-    <div>
+    <div style={{display: 'flex', justifyContent: 'center'}}>
+        {list.length > 0 && 
         <table>
             <thead>
                 <th>Date</th>
@@ -18,7 +19,7 @@ return (
                 })}
                 
             </tbody>
-        </table>
+        </table>}
     </div>
 )
 }
